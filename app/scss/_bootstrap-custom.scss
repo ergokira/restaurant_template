@@ -89,7 +89,6 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
   }
 
   .navbar-toggle {
-    margin-top: 15px;
     border-color: $navbar-custom-toggle-border-color;
     &:hover,
     &:focus {
@@ -176,6 +175,47 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
   }
 }
 
+// Affix top 
+
+#header-main-nav.affix {
+  background-color: #ffffff;
+  border-color: rgba(34, 34, 34, 0.05);
+  transition: all 0.5s;
+  .navbar-header .navbar-brand {
+    color: #cb9f6b;
+  }
+  .nav > li > a {
+    color: #222222;
+    &:focus {
+      color: #222222;
+    }
+    &:hover, &:focus:hover, {
+      color: #cb9f6b;
+    }
+  }
+  .nav > li.active > a {
+    color: #cb9f6b;
+    &:focus {
+      color: #cb9f6b;
+    }
+    &:hover, &:focus:hover, {
+      color: #cb9f6b;
+    }
+  }
+  .logo{
+    color: #cb9f6b;
+    &:hover, &:focus {
+      color: #000;
+    }
+  }
+  .navbar-toggle {
+    border-color: $off-font-color;
+      .icon-bar {
+      background-color: $off-font-color;
+    }
+  }
+}
+
 /*---Slider---*/
 
 .carousel,
@@ -231,36 +271,4 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
     .header {
         min-height: 100%;
     }
-}
-
-
-
-
-
-//////////////////////////////////////////
-
-#header-main-nav.affix {
-  background-color: #ffffff;
-  border-color: rgba(34, 34, 34, 0.05);
-  .navbar-header .navbar-brand {
-    color: #cb9f6b;
-    &:hover, &:focus {
-      color: #000;
-    }
-  }
-  .nav > li > a {
-    color: #222222;
-    &:focus {
-      color: #222222;
-    }
-    &:hover, &:focus:hover {
-      color: #cb9f6b;
-    }
-  }
-  .logo{
-    color: #cb9f6b;
-    &:hover, &:focus {
-      color: #000;
-    }
-  }
 }

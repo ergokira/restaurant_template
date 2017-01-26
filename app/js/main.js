@@ -7,7 +7,7 @@ $(document).ready(function(){
 		if (window.matchMedia("(max-width: 768px)").matches) {
 			$(this).closest('.collapse').collapse('toggle');
 		}
-		$('.main-nav li').removeClass('active');
+		$('.navbar-nav li').removeClass('active');
 		$(this).parent().addClass('active');
 	});
 
@@ -23,6 +23,5 @@ $(document).ready(function(){
             top: 100
         }
     })
-	
-   
+	 
 }); // End of use strict
