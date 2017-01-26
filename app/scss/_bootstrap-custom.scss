@@ -178,34 +178,34 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
 // Affix top 
 
 #header-main-nav.affix {
-  background-color: #ffffff;
+  background-color: $font-color;
   border-color: rgba(34, 34, 34, 0.05);
   transition: all 0.5s;
   .navbar-header .navbar-brand {
-    color: #cb9f6b;
+    color: $main-color;
   }
   .nav > li > a {
-    color: #222222;
+    color: $off-font-color;
     &:focus {
-      color: #222222;
+      color: $off-font-color;
     }
     &:hover, &:focus:hover, {
-      color: #cb9f6b;
+      color: $main-color;
     }
   }
   .nav > li.active > a {
-    color: #cb9f6b;
+    color: $main-color;
     &:focus {
-      color: #cb9f6b;
+      color: $main-color;
     }
     &:hover, &:focus:hover, {
-      color: #cb9f6b;
+      color: $main-color
     }
   }
   .logo{
-    color: #cb9f6b;
+    color: $main-color;
     &:hover, &:focus {
-      color: #000;
+      color: $off-font-color;
     }
   }
   .navbar-toggle {
@@ -271,4 +271,8 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
     .header {
         min-height: 100%;
     }
+}
+
+.carousel-caption {
+  top: 30%;
 }

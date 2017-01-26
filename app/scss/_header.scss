@@ -63,8 +63,6 @@
   }
 }
 
-
-
 //Header full carousel adaptation
 
 header{
@@ -90,4 +88,86 @@ header{
     .fill{
         background-image:url(../img/food3.jpg);
     }
+}
+
+  // Banner Title
+
+.banner-title {
+  text-align: center;
+  width: 100%;
+  padding: 10px;
+  color: $font-color;
+
+  h2{
+    text-shadow: 2px 2px #000;
+    font-family: $banner-font;
+    font-size: 35px;
+  }
+  h3{
+    text-shadow: 2px 2px #000;
+    font-family: $main-font;
+    font-size: 15px;
+  }
+}
+
+@media (min-width: 768px){
+  .banner-title {
+    h2{
+      font-size: 57px;
+    }
+    h3{
+      font-size: 20px;
+    }
+  } 
+}
+
+@media (min-width: 992px){
+  .banner-title {
+    h2{
+      font-size: 65px;
+    }
+    h3{
+      font-size: 25px;
+    }
+  } 
+}
+
+@media (min-width: 1200px){
+  .banner-title {
+    h2{
+      font-size: 75px;
+    }
+    h3{
+      font-size: 30px;
+    }
+  } 
+}
+
+
+.banner-button{
+  display: inline-block;
+  padding: 12px;
+  border: 2px solid $font-color;
+  border-radius: 12px;
+  color: $font-color;
+  width: 140px;
+  margin: 30px 17px 0 17px;
+  font: 15px $main-font;
+  text-decoration: none; 
+  &:active, &:visited, &:hover, &:link{
+    color: $font-color;
+    text-decoration: none; 
+  }
+  &:hover{
+    background-color: $main-color;
+  } 
+}
+
+@media (min-width: 1200px){
+  .banner-button{
+    padding: 15px;
+    width: 160px;
+    margin: 30px 20px 0 20px;
+    font-size: 17px;
+  }
 }
