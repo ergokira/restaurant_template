@@ -42,7 +42,6 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
 
 // custom navbar
 .navbar-custom {
-  background-color: $navbar-custom-bg;
   border-color: $navbar-custom-border;
 
   .navbar-brand {
@@ -235,3 +234,33 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
 }
 
 
+
+
+
+//////////////////////////////////////////
+
+#header-main-nav.affix {
+  background-color: #ffffff;
+  border-color: rgba(34, 34, 34, 0.05);
+  .navbar-header .navbar-brand {
+    color: #cb9f6b;
+    &:hover, &:focus {
+      color: #000;
+    }
+  }
+  .nav > li > a {
+    color: #222222;
+    &:focus {
+      color: #222222;
+    }
+    &:hover, &:focus:hover {
+      color: #cb9f6b;
+    }
+  }
+  .logo{
+    color: #cb9f6b;
+    &:hover, &:focus {
+      color: #000;
+    }
+  }
+}

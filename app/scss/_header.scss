@@ -1,3 +1,70 @@
+#header-main-nav
+{
+  background: $main-bg;
+
+  .logo
+  {
+    font-family: $main-font;
+    text-decoration: none;
+    color: $font-color;
+    font-size: 25px;
+    padding: 5px;
+    display: inline-block;
+    letter-spacing: .15em;
+    line-height: 1.7;
+    &:hover{
+    color: $main-color;
+  } 
+  }
+
+//   .navbar-custom
+//   {
+//     margin: 0;
+//   }
+}
+
+@media (min-width: 768px){
+  .navbar-custom{
+    .logo{
+      letter-spacing: .3em;
+      line-height: 1.5;
+    }
+  }
+}
+
+@media (min-width: 992px){
+  .navbar-custom{
+    .logo{
+      letter-spacing: .5em;
+      font-size: 27px;
+     }
+    li {
+      margin-right: 30px;
+      &:last-child{
+      margin-right: 10px;   
+      }
+    }
+  }
+}
+
+@media (min-width: 1200px){
+  .navbar-custom{
+    .logo{
+      letter-spacing: .5em;
+      font-size: 30px;
+      line-height: 1.2;
+     }
+    li {
+      margin-right: 50px;
+      &:last-child{
+      margin-right: 10px;   
+      }
+    }
+  }
+}
+
+
+
 //Header full carousel adaptation
 
 header{
@@ -7,7 +74,7 @@ header{
 	text-align: center; 
 }
 
-/* Background images are set here */
+/* Banner background images are set here */
 
 .item:nth-child(1){
     .fill{
