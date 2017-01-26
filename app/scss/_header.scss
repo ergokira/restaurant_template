@@ -1,0 +1,26 @@
+//Header full carousel adaptation
+
+header{
+    position: relative;
+	width: 100%;
+	min-height: auto;
+	text-align: center; 
+}
+
+/* Background images are set here */
+
+.item:nth-child(1){
+    .fill{
+        background-image:url(../img/food1.jpg);
+    }    
+}
+.item:nth-child(2){
+    .fill{
+        background-image:url(../img/food2.jpg);
+    }    
+}
+.item:nth-child(3){
+    .fill{
+        background-image:url(../img/food3.jpg);
+    }
+}
