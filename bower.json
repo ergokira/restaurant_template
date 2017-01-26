@@ -1,0 +1,19 @@
+{
+  "name": "restaurant_template",
+  "version": "0.1.0",
+  "description": "Basic restaurant web page",
+  "authors": [
+    "ergokira, jvaldezq"
+  ],
+  "license": "MIT",
+  "homepage": "https://github.com/ergokira/restaurant_template",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components"
+  ],
+  "devDependencies": {},
+  "dependencies": {
+    "bootstrap-sass": "boostrap-sass#^3.3.7"
+  }
+}
