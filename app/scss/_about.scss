@@ -1,0 +1,21 @@
+.content
+{
+    padding: 15px 0 15px 0;
+    margin: 45px 0 45px 0;
+}
+
+.about-text{
+    margin-top: 40%;
+    text-align: center;
+}
+
+.about-images{
+    overflow: hidden;
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    img{
+        margin: 15px;
+        height: 280px;
+    }
+}

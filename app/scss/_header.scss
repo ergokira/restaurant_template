@@ -8,19 +8,14 @@
     text-decoration: none;
     color: $font-color;
     font-size: 25px;
-    padding: 5px;
+    padding: 15px;
     display: inline-block;
     letter-spacing: .15em;
     line-height: 1.7;
     &:hover{
-    color: $main-color;
-  } 
+      color: $main-color;
+    } 
   }
-
-//   .navbar-custom
-//   {
-//     margin: 0;
-//   }
 }
 
 @media (min-width: 768px){
