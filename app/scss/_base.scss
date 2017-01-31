@@ -2,7 +2,7 @@
 @import "././bower_components/bootstrap-sass/assets/stylesheets/bootstrap";
 
 // @import url(http://fonts.googleapis.com/css?family=Arvo:400,700|Frijole);
-@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Fauna+One);
+@import url(https://fonts.googleapis.com/css?family=Dancing+Script|Fauna+One|Lora:700);
 
 $icon-font-path: "../bower_components/bootstrap-sass-official/assets/fonts/bootstrap/";
 
@@ -17,12 +17,19 @@ $font-color: #FFF;
 
 $off-font-color: #222;
 
-$main-font:'Fauna One', serif;
+$main-font: 'Fauna One', serif;
 
-$banner-font:'Dancing Script', cursive;
+$banner-font: 'Dancing Script', cursive;
+
+$title-font: 'Lora', serif;
 
 
 /*---Body---*/
+
+body{
+    color: #555;
+    font-family: $main-font;
+}
  
 html, body {
     height: 100%;

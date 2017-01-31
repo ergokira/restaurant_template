@@ -1,5 +1,3 @@
-@import "base.scss";
-
 //navbar
 $navbar-custom-bg: none;
 
@@ -25,10 +23,6 @@ $navbar-custom-link-hover-bg: rgba(0, 0, 0, 0.2);
 $navbar-custom-link-active-color: $main-color;
 
 $navbar-custom-link-active-bg: none;
-
-$navbar-custom-link-disabled-color: none;
-
-$navbar-custom-link-disabled-bg: none;
 
 
 //toggle
@@ -62,7 +56,6 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
     > li > a {
       font-family: $main-font;
       color: $navbar-custom-link-color;
-      font-size: 13px;
 
       &:hover,
       &:focus {
@@ -76,14 +69,6 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
       &:focus {
         color: $navbar-custom-link-active-color;
         background-color: $navbar-custom-link-active-bg;
-      }
-    }
-    > .disabled > a {
-      &,
-      &:hover,
-      &:focus {
-        color: $navbar-custom-link-disabled-color;
-        background-color: $navbar-custom-link-disabled-bg;
       }
     }
   }
@@ -115,36 +100,6 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
         color: $navbar-custom-link-active-color;
       }
     }
-
-    @media (max-width: $grid-float-breakpoint-max) {
-      // Dropdowns get custom display when collapsed
-      .open .dropdown-menu {
-        > li > a {
-          color: $navbar-custom-link-color;
-          &:hover,
-          &:focus {
-            color: $navbar-custom-link-hover-color;
-            background-color: $navbar-custom-link-hover-bg;
-          }
-        }
-        > .active > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-custom-link-active-color;
-            background-color: $navbar-custom-link-active-bg;
-          }
-        }
-        > .disabled > a {
-          &,
-          &:hover,
-          &:focus {
-            color: $navbar-custom-link-disabled-color;
-            background-color: $navbar-custom-link-disabled-bg;
-          }
-        }
-      }
-    }
   }
 
 
@@ -156,21 +111,6 @@ $navbar-custom-toggle-icon-bar-bg: $font-color;
     color: $navbar-custom-link-color;
     &:hover {
       color: $navbar-custom-link-hover-color;
-    }
-  }
-
-  .btn-link {
-    color: $navbar-custom-link-color;
-    &:hover,
-    &:focus {
-      color: $navbar-custom-link-hover-color;
-    }
-    &[disabled],
-    fieldset[disabled] & {
-      &:hover,
-      &:focus {
-        color: $navbar-custom-link-disabled-color;
-      }
     }
   }
 }
