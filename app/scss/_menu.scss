@@ -1,8 +1,7 @@
 #menu{
-    // background: -webkit-linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)),url(../img/menu.jpg);
-    // background: -o-linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)),url(../img/menu.jpg);
-    // background: linear-gradient(rgba(0,0,0, .5), rgba(0,0,0, .5)),url(../img/menu.jpg);
-    background-image:url(../img/menu.jpg);
+    background: -webkit-linear-gradient($main-bg, $main-bg),url(../img/menu.jpg);
+    background: -o-linear-gradient($main-bg, $main-bg),url(../img/menu.jpg);
+    background: linear-gradient($main-bg, $main-bg),url(../img/menu.jpg);
     background-position: center;
     -webkit-background-size: cover;
     -moz-background-size: cover;
@@ -10,11 +9,8 @@
     background-attachment: fixed;
     
     .content{
-        background-color: $main-bg;
         color: $font-color;
-        box-sizing: border-box;
         padding: 25px;
-        margin: 25px;
     }
 
     ul{
@@ -26,9 +22,24 @@
     }
     span{
         float: right;
+        margin-bottom: 30px;
     }
     h2, h3, h4, h5
     {
         clear: both;
+    }
+    h4{
+        margin-bottom: 40px;
+        font-size: 13px;
+    }
+
+    // Tablet style start
+    @media(min-width: 768px){
+        background-image:url(../img/menu.jpg);
+        .content{
+            background-color: $main-bg;
+            padding: 25px;
+            margin: 25px;
+        }
     }
 }
