@@ -1,0 +1,53 @@
+      .map {
+        height: 500px;
+        pointer-events: none;
+      }
+      .title {
+        margin-bottom: 20px;
+        font-weight: 700;
+        letter-spacing: 2px;
+        font-family: 'Alegreya', serif;
+        text-align: center;
+    }
+    .form {
+      text-align: center;
+      padding: 20px;
+    }
+    .social {
+      text-align: center;
+      padding: 150px;
+    }
+
+      .newsletter {
+        height: 500px;
+        background-image: url(../img/newsletter-bg.png);
+        background-repeat: no-repeat;
+        background-position: top center;
+        background-size: cover;
+        padding: 90px 0 0px;
+      }
+
+      footer {
+        text-align: center;
+        padding: 10px;
+        background-color: $main-color;
+        color: #FFF;
+      }
+
+      .form-input {
+        width: 320px;
+    height: 50px;
+    background-color: #f9f9f9;
+    border: none;
+    border-radius: 0;
+    box-shadow: none;
+
+      }
+      .button-email {
+        width: 70px;
+    height: 50px;
+        background-color: rgb(227, 168, 120);
+        border: none;
+    border-radius: 0;
+    box-shadow: none;
+      }
