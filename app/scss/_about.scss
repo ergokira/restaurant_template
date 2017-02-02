@@ -2,7 +2,8 @@
     background-color: #e5e5e5;
     .content
     {
-        margin: 25px 0 15px 0;
+        margin: 25px 0 35px 0;
+        padding-bottom: 10px;
     }
 
     .about-text{
@@ -12,6 +13,7 @@
             margin-bottom: 45px;
             font-family: $title-font;
             color: $off-font-color;
+            font-size: 40px;
         }
         h4{
             margin-bottom: 25px;
@@ -63,7 +65,7 @@
             }
         }
         .about-text{
-            margin-top: 40%;
+            margin-top: 35%;
         }
     }
 
