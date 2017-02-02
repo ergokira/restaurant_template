@@ -9,7 +9,8 @@ gulp.task('serve', ['sass'], function() {
         server: {
             baseDir: "./app",
             routes: {
-            "/bower_components": "./bower_components"
+            "/bower_components": "./bower_components",
+            "scss/fontawesome": "scss/fontawesome"
             }
         }
 
@@ -24,7 +25,7 @@ gulp.task('serve', ['sass'], function() {
 gulp.task('sass', function() {
     return gulp.src("app/scss/*.scss")
         .pipe(sass())
-        .pipe(gulp.dest("app/tmp"))
+        .pipe(gulp.dest("app/css"))
         .pipe(browserSync.stream());
 });
 
