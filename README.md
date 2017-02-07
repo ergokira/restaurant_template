@@ -1,3 +1,6 @@
+# Restaurant web page template
+
+This is a Restaurant web page template with gulp-sass for precompile Sass and browser reload with browsersync
 
 ## Quick Start
 
