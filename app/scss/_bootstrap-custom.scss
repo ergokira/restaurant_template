@@ -1,0 +1,218 @@
+//navbar
+$navbar-custom-bg: none;
+
+$navbar-custom-border: none;
+
+$navbar-custom-color: $font-color;
+
+//brand
+$navbar-custom-brand-color: $font-color;
+
+$navbar-custom-brand-hover-color: $main-color;
+
+$navbar-custom-brand-hover-bg: none;
+
+
+//link
+$navbar-custom-link-color: $font-color;
+
+$navbar-custom-link-hover-color: $main-color;
+
+$navbar-custom-link-hover-bg: rgba(0, 0, 0, 0.2);
+
+$navbar-custom-link-active-color: $main-color;
+
+$navbar-custom-link-active-bg: none;
+
+
+//toggle
+$navbar-custom-toggle-border-color: $font-color;
+
+$navbar-custom-toggle-hover-bg: none;
+
+$navbar-custom-toggle-icon-bar-bg: $font-color;
+
+//////////////////////////////////////////////////////////////////
+
+// custom navbar
+.navbar-custom {
+  border-color: $navbar-custom-border;
+
+  .navbar-brand {
+    color: $navbar-custom-brand-color;
+    &:hover,
+    &:focus {
+      color: $navbar-custom-brand-hover-color;
+      background-color: $navbar-custom-brand-hover-bg;
+    }
+  }
+
+  .navbar-text {
+    color: $navbar-custom-color;
+  }
+
+  .navbar-nav {
+
+    > li > a {
+      font-family: $main-font;
+      color: $navbar-custom-link-color;
+
+      &:hover,
+      &:focus {
+        color: $navbar-custom-link-hover-color;
+        background-color: rgba(0, 0, 0, 0);
+      }
+    }
+    > .active > a {
+      &,
+      &:hover,
+      &:focus {
+        color: $navbar-custom-link-active-color;
+        background-color: $navbar-custom-link-active-bg;
+      }
+    }
+  }
+
+  .navbar-toggle {
+    border-color: $navbar-custom-toggle-border-color;
+    &:hover,
+    &:focus {
+      background-color: $navbar-custom-toggle-hover-bg;
+    }
+    .icon-bar {
+      background-color: $navbar-custom-toggle-icon-bar-bg;
+    }
+  }
+
+  .navbar-collapse,
+  .navbar-form {
+    border-color: $navbar-custom-border;
+  }
+
+  // Dropdown menu items
+  .navbar-nav {
+    // Remove background color from open dropdown
+    > .open > a {
+      &,
+      &:hover,
+      &:focus {
+        background-color: $navbar-custom-link-active-bg;
+        color: $navbar-custom-link-active-color;
+      }
+    }
+  }
+
+
+  // Links in navbars
+  //
+  // Add a class to ensure links outside the navbar nav are colored correctly.
+
+  .navbar-link {
+    color: $navbar-custom-link-color;
+    &:hover {
+      color: $navbar-custom-link-hover-color;
+    }
+  }
+}
+
+// Affix top 
+
+#header-main-nav.affix {
+  background-color: $font-color;
+  border-color: rgba(34, 34, 34, 0.05);
+  transition: all 0.5s;
+  .navbar-header .navbar-brand {
+    color: $main-color;
+  }
+  .nav > li > a {
+    color: $off-font-color;
+    &:focus {
+      color: $off-font-color;
+    }
+    &:hover, &:focus:hover, {
+      color: $main-color;
+    }
+  }
+  .nav > li.active > a {
+    color: $main-color;
+    &:focus {
+      color: $main-color;
+    }
+    &:hover, &:focus:hover, {
+      color: $main-color
+    }
+  }
+  .logo{
+    color: $main-color;
+    &:hover, &:focus {
+      color: $off-font-color;
+    }
+  }
+  .navbar-toggle {
+    border-color: $off-font-color;
+      .icon-bar {
+      background-color: $off-font-color;
+    }
+  }
+}
+
+/*---Slider---*/
+
+.carousel,
+.item,
+.active {
+    height: 100%;
+}
+
+.carousel-inner {
+    height: 100%;
+}
+
+.carousel-fade .carousel-inner .item {
+    transition-property: opacity;
+}
+.item,
+.active.left,
+.active.right {
+    opacity: 0;
+}
+
+.active,
+.next.left,
+.prev.right {
+    opacity: 1;
+}
+
+.next,
+.prev,
+.active.left,
+.active.right {
+    left: 0;
+    transform: translate3d(0, 0, 0);
+}
+
+.carousel-control {
+    z-index: 2;
+}
+
+
+.fill {
+    width: 100%;
+    height: 100%;
+    background-position: center;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    background-size: cover;
+    -o-background-size: cover;
+}
+
+
+@media (min-width: 768px) {
+    .header {
+        min-height: 100%;
+    }
+}
+
+.carousel-caption {
+  top: 30%;
+}
